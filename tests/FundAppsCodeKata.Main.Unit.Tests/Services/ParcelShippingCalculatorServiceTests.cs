@@ -20,7 +20,7 @@ namespace FundAppsCodeKata.Main.Unit.Tests.Services
         [Test]
         public void Should_Return_Correct_Price_For_Small_Parcel()
         {
-            const int ExpectedPrice = 3;
+            const double ExpectedPrice = Constants.SMALL_PARCEL_SIZE_COST;
             const int MinimumParcelSize = Constants.MINIMUM_SMALL_PARCEL_SIZE;
             const int MaximumParcelSize = Constants.MAXIMUM_SMALL_PARCEL_SIZE;
 
@@ -36,7 +36,7 @@ namespace FundAppsCodeKata.Main.Unit.Tests.Services
         [Test]
         public void Should_Return_Correct_Price_For_Medium_Parcel()
         {
-            const int ExpectedPrice = 8;
+            const double ExpectedPrice = Constants.MEDIUM_PARCEL_SIZE_COST;
             const int MinimumParcelSize = Constants.MINIMUM_MEDIUM_PARCEL_SIZE;
             const int MaximumParcelSize = Constants.MAXIMUM_MEDIUM_PARCEL_SIZE;
 
@@ -52,7 +52,7 @@ namespace FundAppsCodeKata.Main.Unit.Tests.Services
         [Test]
         public void Should_Return_Correct_Price_For_Large_Parcel()
         {
-            const int ExpectedPrice = 15;
+            const double ExpectedPrice = Constants.LARGE_PARCEL_SIZE_COST;
             const int MinimumParcelSize = Constants.MINIMUM_LARGE_PARCEL_SIZE;
             const int MaximumParcelSize = Constants.MAXIMUM_LARGE_PARCEL_SIZE;
 
@@ -68,7 +68,7 @@ namespace FundAppsCodeKata.Main.Unit.Tests.Services
         [Test]
         public void Should_Return_Correct_Price_For_Extra_Large_Parcel()
         {
-            const int ExpectedPrice = 25;
+            const double ExpectedPrice = Constants.EXTRA_LARGE_PARCEL_SIZE_COST;
             const int MinimumParcelSize = Constants.MINIMUM_EXTRA_LARGE_PARCEL_SIZE;
             const int MaximumParcelSize = 10000;
 

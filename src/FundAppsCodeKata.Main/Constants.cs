@@ -13,5 +13,10 @@ namespace FundAppsCodeKata.Main
         public const int MINIMUM_LARGE_PARCEL_SIZE = 50;
         public const int MAXIMUM_LARGE_PARCEL_SIZE = 99;
         public const int MINIMUM_EXTRA_LARGE_PARCEL_SIZE = 100;
+
+        public const double SMALL_PARCEL_SIZE_COST = 3;
+        public const double MEDIUM_PARCEL_SIZE_COST = 8;
+        public const double LARGE_PARCEL_SIZE_COST = 15;
+        public const double EXTRA_LARGE_PARCEL_SIZE_COST = 25;
     }
 }
