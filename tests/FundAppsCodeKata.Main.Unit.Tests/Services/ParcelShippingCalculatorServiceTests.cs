@@ -21,8 +21,8 @@ namespace FundAppsCodeKata.Main.Unit.Tests.Services
         public void Should_Return_Correct_Price_For_Small_Parcel()
         {
             const int ExpectedPrice = 3;
-            const int MinimumParcelSize = 1;
-            const int MaximumParcelSize = 9;
+            const int MinimumParcelSize = Constants.MINIMUM_SMALL_PARCEL_SIZE;
+            const int MaximumParcelSize = Constants.MAXIMUM_SMALL_PARCEL_SIZE;
 
             var _parcelSizes = GenerateParcelSizeList(MinimumParcelSize, MaximumParcelSize);
 
@@ -37,8 +37,8 @@ namespace FundAppsCodeKata.Main.Unit.Tests.Services
         public void Should_Return_Correct_Price_For_Medium_Parcel()
         {
             const int ExpectedPrice = 8;
-            const int MinimumParcelSize = 10;
-            const int MaximumParcelSize = 49;
+            const int MinimumParcelSize = Constants.MINIMUM_MEDIUM_PARCEL_SIZE;
+            const int MaximumParcelSize = Constants.MAXIMUM_MEDIUM_PARCEL_SIZE;
 
             var _parcelSizes = GenerateParcelSizeList(MinimumParcelSize, MaximumParcelSize);
 
@@ -53,8 +53,8 @@ namespace FundAppsCodeKata.Main.Unit.Tests.Services
         public void Should_Return_Correct_Price_For_Large_Parcel()
         {
             const int ExpectedPrice = 15;
-            const int MinimumParcelSize = 50;
-            const int MaximumParcelSize = 99;
+            const int MinimumParcelSize = Constants.MINIMUM_LARGE_PARCEL_SIZE;
+            const int MaximumParcelSize = Constants.MAXIMUM_LARGE_PARCEL_SIZE;
 
             var _parcelSizes = GenerateParcelSizeList(MinimumParcelSize, MaximumParcelSize);
 
@@ -69,7 +69,7 @@ namespace FundAppsCodeKata.Main.Unit.Tests.Services
         public void Should_Return_Correct_Price_For_Extra_Large_Parcel()
         {
             const int ExpectedPrice = 25;
-            const int MinimumParcelSize = 100;
+            const int MinimumParcelSize = Constants.MINIMUM_EXTRA_LARGE_PARCEL_SIZE;
             const int MaximumParcelSize = 10000;
 
             var _parcelSizes = GenerateParcelSizeList(MinimumParcelSize, MaximumParcelSize);

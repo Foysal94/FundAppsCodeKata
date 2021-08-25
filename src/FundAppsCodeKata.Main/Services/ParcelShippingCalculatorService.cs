@@ -8,13 +8,18 @@ namespace FundAppsCodeKata.Main.Services
         public double Calculcate(int parcelSize)
         {
             // Convert to switch later
-            if (parcelSize < 9)
+
+            // Small parcel
+            if (parcelSize < Constants.MAXIMUM_SMALL_PARCEL_SIZE)
                 return 3;
-            else if (parcelSize > 9 && parcelSize < 49)
+            // Medium parcel
+            else if (parcelSize > Constants.MINIMUM_MEDIUM_PARCEL_SIZE && parcelSize < Constants.MAXIMUM_MEDIUM_PARCEL_SIZE)
                 return 8;
-            else if (parcelSize > 50 && parcelSize < 99)
+            // Large Parcel
+            else if (parcelSize > Constants.MINIMUM_LARGE_PARCEL_SIZE && parcelSize < Constants.MAXIMUM_LARGE_PARCEL_SIZE)
                 return 15;
-            else if (parcelSize >= 100)
+            // Extra Large Parcel
+            else if (parcelSize >= Constants.MINIMUM_EXTRA_LARGE_PARCEL_SIZE)
                 return 25;
             else
                 // Need to handle this somehow later, or maybe reuturn 0? Not sure.
