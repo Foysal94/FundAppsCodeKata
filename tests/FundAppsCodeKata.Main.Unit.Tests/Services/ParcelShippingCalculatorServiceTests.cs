@@ -54,7 +54,7 @@ namespace FundAppsCodeKata.Main.Unit.Tests.Services
         {
             const int ExpectedPrice = 15;
             const int MinimumParcelSize = 50;
-            const int MaximumParcelSize = 100;
+            const int MaximumParcelSize = 99;
 
             var _parcelSizes = GenerateParcelSizeList(MinimumParcelSize, MaximumParcelSize);
 
