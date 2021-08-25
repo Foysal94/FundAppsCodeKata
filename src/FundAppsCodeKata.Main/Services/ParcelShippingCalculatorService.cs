@@ -3,7 +3,7 @@
 namespace FundAppsCodeKata.Main.Services
 {
     // Maybe this class and method can be static?
-    public class ParcelShippingCalculatorService
+    public class ParcelShippingCalculatorService : IParcelShippingCalculatorService
     {
         public double Calculcate(int parcelSize)
         {
