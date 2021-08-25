@@ -15,7 +15,16 @@ namespace FundAppsCodeKata.Main.Services
 
         public double CalculateOrder(IReadOnlyCollection<int> parcelSizes, bool isSpeedyShipping)
         {
-            return 0;
+            double totalCost = 0;
+            foreach (var parcelSize in parcelSizes)
+            {
+                totalCost = totalCost + _parcelShippingCalculatorService.Calculcate(parcelSize);
+            }
+
+            if (isSpeedyShipping)
+                totalCost = totalCost * 2;
+
+            return totalCost;
         }
 
     }
