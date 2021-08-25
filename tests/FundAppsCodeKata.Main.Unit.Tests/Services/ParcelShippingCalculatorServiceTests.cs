@@ -91,7 +91,8 @@ namespace FundAppsCodeKata.Main.Unit.Tests.Services
             {
                 do
                 {
-                    randomParcelSize = random.Next(minimumParcelSize, maximumParcelSize);
+                    // -1 and + 1 to include the minimum and maximum in the ranges
+                    randomParcelSize = random.Next(minimumParcelSize - 1, maximumParcelSize + 1);
                 } while (_parcelSizes.Contains(randomParcelSize));
 
                 _parcelSizes.Add(randomParcelSize);
